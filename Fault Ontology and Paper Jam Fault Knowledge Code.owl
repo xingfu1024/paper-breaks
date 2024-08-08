@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#"
+     xml:base="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#happenIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#happenIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#fault"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#hasFaultCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#hasFaultCause">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#cause"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#fault"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#hasMaintenanceMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#hasMaintenanceMethod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#cause"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#phenomenon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#solution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#phenomenon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#solution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#hasWarning -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#hasWarning">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#phenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#isRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#isRelatedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#production_process_parameters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#leadTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#leadTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#production_process_parameters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#phenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#referTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#referTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Dectection"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Dectection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#cause"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#phenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Dectection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Dectection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#phenomenon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#cause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#cause"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#fault -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#fault"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#phenomenon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#phenomenon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#production_process_parameters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#production_process_parameters"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#solution"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#刮刀不良 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#刮刀不良">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#cause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#工艺参数 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#工艺参数">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#production_process_parameters"/>
+        <owl:topDataProperty>浆料</owl:topDataProperty>
+        <owl:topDataProperty>纸张定量</owl:topDataProperty>
+        <owl:topDataProperty>蒸汽压力</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#断纸 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#断纸">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#fault"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#更换刮刀 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#更换刮刀">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#solution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#清洗喷嘴 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#清洗喷嘴">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#solution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#清除网丝 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#清除网丝">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#solution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#烘缸部 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#烘缸部">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Dectection"/>
+        <owl:topDataProperty>烘缸冷凝水排放</owl:topDataProperty>
+        <owl:topDataProperty>烘缸进气排放</owl:topDataProperty>
+        <owl:topDataProperty>转速</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#网边积浆 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#网边积浆">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#phenomenon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#调整偏差 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#调整偏差">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#solution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#车速不稳定 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#车速不稳定">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#cause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#造纸机 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#造纸机">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/8/untitled-ontology-16#Location"/>
+        <owl:topDataProperty>卷取部</owl:topDataProperty>
+        <owl:topDataProperty>压光部</owl:topDataProperty>
+        <owl:topDataProperty>压榨部</owl:topDataProperty>
+        <owl:topDataProperty>烘缸部</owl:topDataProperty>
+        <owl:topDataProperty>网部</owl:topDataProperty>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
